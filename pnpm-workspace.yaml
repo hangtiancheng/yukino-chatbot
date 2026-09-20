@@ -1,0 +1,12 @@
+packages:
+  - client
+  - server
+
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+  sharp: true
+
+onlyBuiltDependencies:
+  - esbuild
+  - msw
