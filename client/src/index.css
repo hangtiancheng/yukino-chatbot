@@ -86,10 +86,11 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --font-sans:
-    "Geist Mono", "Menlo", "Cascadia Code", "PingFang SC", "Microsoft YaHei",
-    monospace;
+    'Yukino', 'Maple Mono', Menlo, 'Cascadia Code', 'Sarasa Gothic SC', 'PingFang SC',
+    'Microsoft YaHei', sans-serif;
   --font-mono:
-    "Geist Mono", "Menlo", "Cascadia Code", "PingFang SC", "Microsoft YaHei";
+    'Yukino', 'Maple Mono', Menlo, 'Cascadia Code', 'Sarasa Gothic SC', 'PingFang SC',
+    'Microsoft YaHei', monospace;
 }
 
 @utility press-feedback {
