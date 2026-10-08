@@ -15,6 +15,7 @@
     "build:client": "pnpm --filter client build",
     "build:server": "pnpm --filter server build",
     "build": "concurrently \"pnpm build:client\" \"pnpm build:server\"",
+    "git:config": "git config user.name hangtiancheng && git config user.email '161043261@qq.com'",
     "git:commit": "git add -A && git commit -m \"feat: Introduce new features\"",
     "git:push": "pnpm git:commit && git push origin main"
   }
