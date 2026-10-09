@@ -11,7 +11,7 @@
     "format": "prettier -w ./"
   },
   "dependencies": {
-    "@base-ui/react": "^1.8.0",
+    "@base-ui/react": "^1.9.0",
     "@streamdown/code": "^1.1.1",
     "@tailwindcss/vite": "^4.3.3",
     "@tanstack/react-form": "^1.33.5",

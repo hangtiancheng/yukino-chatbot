@@ -7,3 +7,5 @@ allowBuilds:
   esbuild: true
   msw: true
   sharp: true
+
+minimumReleaseAge: 0
