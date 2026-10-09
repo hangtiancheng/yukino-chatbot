@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@12.10.1",
   "devDependencies": {
-    "concurrently": "^9.2.4"
+    "concurrently": "^9.2.5"
   },
   "scripts": {
     "dev:client": "pnpm --filter client dev",
