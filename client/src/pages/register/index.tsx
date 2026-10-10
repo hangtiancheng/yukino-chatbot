@@ -25,10 +25,8 @@ const registerSchema = z
     password: z.string().min(6, "auth.password_required"),
     confirmPassword: z.string().min(1, "auth.confirm_password_required"),
   })
-  // refine 自定义校验逻辑
   .refine((data) => data.password === data.confirmPassword, {
     message: "auth.password_mismatch",
-    // path 绑定到 confirmPassword 字段
     path: ["confirmPassword"],
   });
 
@@ -99,7 +97,6 @@ function Register() {
       <div className="flex flex-1 items-center justify-center">
         <Card className="w-105 gap-0 shadow-none">
           <CardHeader className="pt-10 pb-2 text-center">
-            {/* Logo */}
             <div className="mb-6 flex justify-center">
               <div className="bg-primary/10 flex size-16 items-center justify-center rounded-full">
                 <UserPlus className="text-primary size-8" />

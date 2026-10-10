@@ -7,11 +7,9 @@ import MessageItem from "../message-item";
 
 interface Props {
   messages: Message[];
-  /** Shared buffer for the in-flight stream, forwarded to the streaming row. */
   streamRef: RefObject<string>;
 }
 
-/** Distance (px) from the bottom within which auto-scroll stays engaged. */
 const NEAR_BOTTOM_THRESHOLD = 80;
 
 function MessageList({ messages, streamRef }: Props) {
@@ -19,8 +17,6 @@ function MessageList({ messages, streamRef }: Props) {
   const { t } = useTranslation();
   const parentRef = useRef<HTMLDivElement>(null);
   const bodyRef = useRef<HTMLDivElement>(null);
-  // Tracks whether the user is near the bottom — auto-scroll must never
-  // hijack the viewport while the user is reading or selecting history.
   const isNearBottomRef = useRef(true);
 
   const virtualizer = useVirtualizer({
@@ -37,21 +33,14 @@ function MessageList({ messages, streamRef }: Props) {
       el.scrollHeight - el.scrollTop - el.clientHeight < NEAR_BOTTOM_THRESHOLD;
   };
 
-  // Scroll on new messages: always for the user's own message, otherwise only
-  // when the user is already near the bottom.
   const lastMessageRole = messages[messages.length - 1]?.role;
   useEffect(() => {
     if (messages.length === 0) return;
     if (lastMessageRole === "user" || isNearBottomRef.current) {
       virtualizer.scrollToIndex(messages.length - 1, { align: "end" });
     }
-    // Content growth during streaming is handled by the ResizeObserver below;
-    // only a new message (or a role change of the tail) should retrigger this.
   }, [messages.length, lastMessageRole, virtualizer]);
 
-  // Pin to bottom as the total height grows (the streaming bubble expands via
-  // direct DOM writes that never touch React state), gated on near-bottom so
-  // the user keeps scroll control while reading history.
   useEffect(() => {
     const body = bodyRef.current;
     if (!body) return;

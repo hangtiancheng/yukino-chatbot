@@ -79,9 +79,7 @@ export function useStreamMessage(callbacks: StreamCallbacks) {
               }
               continue;
             }
-          } catch {
-            // Not valid JSON, treat as raw content
-          }
+          } catch {}
 
           fullContent += content;
           callbacks.onChunk(fullContent);

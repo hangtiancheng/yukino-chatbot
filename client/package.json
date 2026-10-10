@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier -w ./"
+    "format": "prettier -w ./ --experimental-cli"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

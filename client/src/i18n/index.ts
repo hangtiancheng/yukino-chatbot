@@ -9,9 +9,7 @@ function getSavedLanguage() {
     if (saved === "zh" || saved === "en") {
       return saved;
     }
-  } catch {
-    // ignore
-  }
+  } catch {}
   const browserLang = navigator.language.toLowerCase();
   return browserLang.startsWith("zh") ? "zh" : "en";
 }

@@ -36,7 +36,6 @@ function AiChat() {
   >(null);
   const [historyEnabled, setHistoryEnabled] = useState(false);
 
-  // Query: load sessions
   const sessionsQuery = useSessions();
 
   const createNewSession = useCallback(() => {
@@ -45,7 +44,6 @@ function AiChat() {
     setCurrentMessages([]);
   }, []);
 
-  // Sync query data into local state during render (guarded adjust pattern)
   const sessionsData = sessionsQuery.data;
   const [prevSessionsData, setPrevSessionsData] = useState(sessionsData);
   if (sessionsData !== prevSessionsData) {
@@ -69,7 +67,6 @@ function AiChat() {
     }
   }
 
-  // Query: load chat history
   const chatHistoryQuery = useChatHistory(
     fetchHistorySessionId,
     historyEnabled,
@@ -102,18 +99,12 @@ function AiChat() {
     }
   }
 
-  // Mutation: create session + send message
   const createSessionMutation = useCreateSessionAndSendMessage();
 
-  // Mutation: send message to existing session
   const sendMessageMutation = useSendMessage2Session();
 
-  // Buffer for in-flight streamed text. Chunks land here (zero React renders);
-  // TypingText reads it directly, and the final content is committed to state
-  // exactly once when the stream settles.
   const streamTextRef = useRef("");
 
-  /** Flush the buffered stream into the trailing AI message in a single setState. */
   const commitStreamedMessage = useCallback((status: "done" | "error") => {
     const content = streamTextRef.current;
     streamTextRef.current = "";
@@ -131,7 +122,6 @@ function AiChat() {
     });
   }, []);
 
-  // Streaming mutation
   const streamMutation = useStreamMessage({
     onSessionCreated: (sessionId: string) => {
       if (tempSession) {
@@ -148,7 +138,6 @@ function AiChat() {
       }
     },
     onChunk: (fullContent: string) => {
-      // Hot path: ref write only — no setState, no re-render per chunk.
       streamTextRef.current = fullContent;
     },
     onDone: () => {
@@ -157,7 +146,6 @@ function AiChat() {
     },
     onError: () => {
       setLoading(false);
-      // Preserve the partial answer so the user keeps whatever arrived.
       commitStreamedMessage("error");
       toast.error(t("chat.stream_error"));
     },
@@ -206,15 +194,11 @@ function AiChat() {
           session_id: currentSessionId ?? undefined,
           isNewSession: tempSession,
         });
-        // Safety net: commit even if the server closed without a [DONE] sentinel.
         if (streamTextRef.current) {
           setLoading(false);
           commitStreamedMessage("done");
         }
-      } catch {
-        // The mutation's onError already surfaced the failure and preserved
-        // the partial content — nothing more to do here.
-      }
+      } catch {}
     },
     [
       tempSession,
@@ -374,7 +358,6 @@ function AiChat() {
 
   return (
     <div className="bg-background flex h-screen overflow-hidden">
-      {/* Session Sidebar */}
       <SessionSidebar
         sessions={sessionList}
         currentSessionId={currentSessionId}
@@ -382,9 +365,7 @@ function AiChat() {
         onSwitch={switchSession}
       />
 
-      {/* Main Chat Area */}
       <main className="flex flex-1 flex-col overflow-hidden">
-        {/* Header */}
         <ChatHeader
           currentSessionId={currentSessionId}
           tempSession={tempSession}
@@ -399,7 +380,6 @@ function AiChat() {
           onFileUpload={handleFileUpload}
         />
 
-        {/* Messages Area */}
         <div className="flex-1 overflow-hidden">
           {currentMessages.length === 0 ? (
             <div className="flex h-full flex-col items-center justify-center gap-4">
@@ -416,7 +396,6 @@ function AiChat() {
           )}
         </div>
 
-        {/* Input Area */}
         <ChatInput loading={loading} onSend={sendMessage} />
       </main>
     </div>

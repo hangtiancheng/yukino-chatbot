@@ -9,13 +9,10 @@ function ThemeProvider({ children }: PropsWithChildren) {
   useEffect(() => {
     const root = window.document.documentElement;
 
-    // Remove both classes first
     root.classList.remove("light", "dark");
 
-    // Add the resolved theme class
     root.classList.add(resolvedTheme);
 
-    // Update meta theme-color for mobile browsers
     const metaThemeColor = document.querySelector('meta[name="theme-color"]');
     if (metaThemeColor) {
       metaThemeColor.setAttribute(
@@ -25,7 +22,6 @@ function ThemeProvider({ children }: PropsWithChildren) {
     }
   }, [resolvedTheme]);
 
-  // Listen for system theme changes when theme is set to 'system'
   useEffect(() => {
     if (theme !== "system") {
       return;

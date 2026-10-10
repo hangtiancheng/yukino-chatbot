@@ -70,7 +70,6 @@ function Login() {
 
   return (
     <div className="bg-background flex min-h-screen flex-col">
-      {/* Settings Bar - Top Right */}
       <div className="absolute top-4 right-4 z-10">
         <SettingsBar />
       </div>
@@ -78,7 +77,6 @@ function Login() {
       <div className="flex flex-1 items-center justify-center">
         <Card className="w-105 gap-0 shadow-none">
           <CardHeader className="pt-10 pb-2 text-center">
-            {/* Logo */}
             <div className="mb-6 flex justify-center">
               <div className="bg-primary/10 flex size-16 items-center justify-center rounded-full">
                 <MessageSquare className="text-primary size-8" />

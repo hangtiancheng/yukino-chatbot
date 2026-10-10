@@ -1,12 +1,8 @@
-/**
- * @deprecated Use hooks from `@/hooks/queries` with @tanstack/react-query instead.
- * This module is kept for backward compatibility only.
- */
 import axios, { AxiosError } from "axios";
 
 const api = axios.create({
   baseURL: "/api",
-  timeout: 0, // No timeout
+  timeout: 0,
 });
 
 api.interceptors.request.use(

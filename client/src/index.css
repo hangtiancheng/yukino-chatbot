@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* Let Tailwind detect the utility classes used inside Streamdown's dist files. */
 @source "../node_modules/streamdown/dist/*.js";
 @source "../node_modules/@streamdown/code/dist/*.js";
 
@@ -86,11 +85,11 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --font-sans:
-    'Yukino', 'Maple Mono', Menlo, 'Cascadia Code', 'Sarasa Gothic SC', 'PingFang SC',
-    'Microsoft YaHei', sans-serif;
+    "Yukino", "Maple Mono", Menlo, "Cascadia Code", "Sarasa Gothic SC",
+    "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-mono:
-    'Yukino', 'Maple Mono', Menlo, 'Cascadia Code', 'Sarasa Gothic SC', 'PingFang SC',
-    'Microsoft YaHei', monospace;
+    "Yukino", "Maple Mono", Menlo, "Cascadia Code", "Sarasa Gothic SC",
+    "PingFang SC", "Microsoft YaHei", monospace;
 }
 
 @utility press-feedback {
@@ -106,12 +105,6 @@
   }
 }
 
-/*
- * Streamdown ships pre-level background classes with a syntax error
- * (`bg-[var(--sdm-bg,inherit]`, missing paren), so Tailwind never generates
- * them. Recreate the intended rules: Shiki sets --sdm-bg / --shiki-dark-bg
- * inline per theme.
- */
 [data-streamdown="code-block-body"] pre {
   background-color: var(--sdm-bg, transparent);
 }

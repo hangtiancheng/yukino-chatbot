@@ -9,22 +9,15 @@ import StreamingMarkdown from "../streaming-markdown";
 
 interface Props {
   message: Message;
-  /** Shared buffer for the in-flight stream; only read while `status === "streaming"`. */
   streamRef: RefObject<string>;
 }
 
-/**
- * Memoized on purpose: in a long virtualized conversation, already-settled
- * messages keep a stable object identity, so they are locked out of React's
- * diffing entirely and never re-render due to unrelated streaming activity.
- */
 const MessageItem = memo(function MessageItem({ message, streamRef }: Props) {
   const { t } = useTranslation();
   const isUser = message.role === "user";
 
   return (
     <div className={cn("flex gap-4", isUser && "flex-row-reverse")}>
-      {/* Avatar */}
       <div
         className={cn(
           "flex size-9 shrink-0 items-center justify-center rounded-full",
@@ -38,7 +31,6 @@ const MessageItem = memo(function MessageItem({ message, streamRef }: Props) {
         )}
       </div>
 
-      {/* Message Content */}
       <div className={cn("flex-1", isUser && "text-right")}>
         <div className="mb-1 flex items-center gap-2">
           <span
@@ -69,7 +61,6 @@ const MessageItem = memo(function MessageItem({ message, streamRef }: Props) {
               <span className="bg-muted-foreground/20 size-2 animate-bounce rounded-full" />
             </div>
           ) : message.status === "streaming" ? (
-            // Incremental block-level markdown — stays fully rendered mid-stream.
             <StreamingMarkdown sourceRef={streamRef} />
           ) : (
             <Markdown>{message.content}</Markdown>

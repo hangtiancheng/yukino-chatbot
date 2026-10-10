@@ -23,7 +23,6 @@ function Menu() {
 
   return (
     <div className="bg-background flex min-h-screen flex-col">
-      {/* Header */}
       <header className="bg-background border-b">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
           <div className="flex items-center gap-3">
@@ -43,10 +42,8 @@ function Menu() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex flex-1 items-center justify-center p-8">
         <div className="w-full max-w-4xl">
-          {/* Welcome Section */}
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-4xl font-normal">{t("menu.welcome")}</h2>
             <p className="text-muted-foreground text-lg">
@@ -54,9 +51,7 @@ function Menu() {
             </p>
           </div>
 
-          {/* Feature Cards */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            {/* AI Chat Card */}
             <Card
               className="group hover:border-primary cursor-pointer transition-all duration-200 hover:shadow-lg"
               onClick={() => navigate("/ai-chat")}
@@ -78,7 +73,6 @@ function Menu() {
               </CardContent>
             </Card>
 
-            {/* Coming Soon Card */}
             <Card className="opacity-60">
               <CardContent className="p-8">
                 <div className="flex items-start gap-5">
@@ -100,7 +94,6 @@ function Menu() {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="bg-background border-t py-4">
         <div className="text-muted-foreground mx-auto flex max-w-7xl items-center justify-between px-6 text-sm">
           <span>
