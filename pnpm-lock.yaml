@@ -180,7 +180,7 @@ importers:
         version: 1.1.1(react@19.3.0)
       '@tailwindcss/vite':
         specifier: ^4.3.3
-        version: 4.3.3(vite@8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+        version: 4.3.3(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
       '@tanstack/react-form':
         specifier: ^1.33.5
         version: 1.33.5(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -188,8 +188,8 @@ importers:
         specifier: ^5.104.1
         version: 5.104.1(react@19.3.0)
       '@tanstack/react-virtual':
-        specifier: ^3.14.13
-        version: 3.14.13(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
+        specifier: ^3.14.14
+        version: 3.14.14(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       axios:
         specifier: ^1.20.0
         version: 1.20.0(debug@4.4.3(supports-color@8.1.1))(supports-color@8.1.1)
@@ -234,7 +234,7 @@ importers:
         version: 4.3.3
       vite:
         specifier: ^8.3.4
-        version: 8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+        version: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
       zod:
         specifier: ^4.6.5
         version: 4.6.5
@@ -243,8 +243,8 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5
       '@types/node':
-        specifier: ^24.19.1
-        version: 24.19.1
+        specifier: ^24.19.2
+        version: 24.19.2
       '@types/react':
         specifier: ^19.3.0
         version: 19.3.0
@@ -253,7 +253,7 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: ^5.2.0
-        version: 5.2.0(supports-color@8.1.1)(vite@8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
+        version: 5.2.0(supports-color@8.1.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))
       eslint:
         specifier: ^9.39.5
         version: 9.39.5(jiti@2.7.0)(supports-color@8.1.1)
@@ -301,7 +301,7 @@ importers:
         version: 1.0.52(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       '@langchain/community':
         specifier: ^1.1.29
-        version: 1.1.29(@browserbasehq/sdk@2.21.0)(@browserbasehq/stagehand@1.14.0(@playwright/test@1.64.0)(deepmerge@4.3.1)(dotenv@17.4.2)(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(zod@4.6.5))(@ibm-cloud/watsonx-ai@1.7.16(supports-color@8.1.1))(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(ibm-cloud-sdk-core@5.9.0(supports-color@8.1.1))(ignore@7.0.12)(ioredis@5.11.1(supports-color@8.1.1))(jsonwebtoken@9.0.3)(lodash@4.18.1)(mysql2@3.24.5(@types/node@24.19.1))(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(playwright@1.64.0)(ws@8.22.0)
+        version: 1.1.29(@browserbasehq/sdk@2.21.0)(@browserbasehq/stagehand@1.14.0(@playwright/test@1.64.0)(deepmerge@4.3.1)(dotenv@17.4.2)(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(zod@4.6.5))(@ibm-cloud/watsonx-ai@1.7.16(supports-color@8.1.1))(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(ibm-cloud-sdk-core@5.9.0(supports-color@8.1.1))(ignore@7.0.12)(ioredis@5.11.1(supports-color@8.1.1))(jsonwebtoken@9.0.3)(lodash@4.18.1)(mysql2@3.24.5(@types/node@24.19.2))(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(playwright@1.64.0)(ws@8.22.0)
       '@langchain/core':
         specifier: ^1.2.17
         version: 1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
@@ -328,7 +328,7 @@ importers:
         version: 9.0.3
       knex:
         specifier: ^3.3.0
-        version: 3.3.0(mysql2@3.24.5(@types/node@24.19.1))(supports-color@8.1.1)
+        version: 3.3.0(mysql2@3.24.5(@types/node@24.19.2))(supports-color@8.1.1)
       koa:
         specifier: ^3.2.1
         version: 3.2.1
@@ -346,7 +346,7 @@ importers:
         version: 11.5.3
       mysql2:
         specifier: ^3.24.5
-        version: 3.24.5(@types/node@24.19.1)
+        version: 3.24.5(@types/node@24.19.2)
       openai:
         specifier: ^6.49.0
         version: 6.49.0(ws@8.22.0)(zod@4.6.5)
@@ -397,8 +397,8 @@ importers:
         specifier: ^4.17.12
         version: 4.17.12
       '@types/node':
-        specifier: ^24.19.1
-        version: 24.19.1
+        specifier: ^24.19.2
+        version: 24.19.2
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.71.1
         version: 8.71.1(@typescript-eslint/parser@8.71.1(eslint@9.39.5(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3))(eslint@9.39.5(jiti@2.7.0)(supports-color@8.1.1))(supports-color@8.1.1)(typescript@5.9.3)
@@ -1781,8 +1781,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@tanstack/react-virtual@3.14.13':
-    resolution: {integrity: sha512-JbDTAwtzZ99aOeCrAfW5EsE5KSq5RWh6Af2dtFwyLIIk48Ja7vm6n4axu/43T3vfjFnEGJalxJ1wyYjSQD6bSg==}
+  '@tanstack/react-virtual@3.14.14':
+    resolution: {integrity: sha512-eo/arVIpYi9rGJXR5y4fDoTiz+BBOc4HKVBKQMoPRswxJtP6HV8iupW/DkBE9TRh+PjzikIDHw2h7aV25g0Z4w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -1790,8 +1790,8 @@ packages:
   '@tanstack/store@0.11.2':
     resolution: {integrity: sha512-sJ4mjol8uQsHV0gOJzzjwXfh2Fwm+Sz0+8deqiTm4jGbMdjzNSW+xZCFm0kUa870uhd8yi+DpKnZb5Kc4apa0Q==}
 
-  '@tanstack/virtual-core@3.17.11':
-    resolution: {integrity: sha512-+ILjvtHup6Y2hzQ6YzwMgX1Q+oQpxEGOXCEsCNaPoIP0VxMbizIBTmYTDtkerkIQS8/CbP1BRuyt8V/8BCsy1g==}
+  '@tanstack/virtual-core@3.18.0':
+    resolution: {integrity: sha512-8frWsyfyBwLGoDQ6wN6Lq3CoT8j4BPJUzE6nH4P9mruLhxPOamk82prC3JxRMLJzYnNa9ISaZ8NtfxEiOGkHEQ==}
 
   '@tokenizer/inflate@0.4.1':
     resolution: {integrity: sha512-2mAv+8pkG6GIZiF1kNg1jAjh27IDxEPKwdGul3snfztFerfPGI1LjDezZp3i7BElXompqEtPmoPx6c2wgtWsOA==}
@@ -1891,8 +1891,8 @@ packages:
   '@types/lodash-es@4.17.12':
     resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
 
-  '@types/lodash@4.17.25':
-    resolution: {integrity: sha512-+K1NIO8I+F9/wNulfVvu23QYd0Pe9/OCqRrim4NoYIf1VoEDL90Ve4ClzpyqBLc7NpGGWRvYNCKZ1BE/Jpf8dQ==}
+  '@types/lodash@4.17.26':
+    resolution: {integrity: sha512-48NWfiY6oNcKOh47Z4h+sIvwcQR91h6KPhaYKgeMIrkT2jV82Gy90SErj60vW8jQbeMSOSbhIv3bZ7JoqPPVhA==}
 
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
@@ -1906,8 +1906,8 @@ packages:
   '@types/node@18.19.130':
     resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
 
-  '@types/node@24.19.1':
-    resolution: {integrity: sha512-aS3/DG0oM05K0RIXXP+hKjinGG5IgSSVGzswZxW3O0sS3pH4/fycXundUC9XsszgKCk4gHXylTEK6hyFxVxnoQ==}
+  '@types/node@24.19.2':
+    resolution: {integrity: sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ==}
 
   '@types/qs@6.15.1':
     resolution: {integrity: sha512-GZHUBZR9hckSUhrxmp1nG6NwdpM9fCunJwyThLW1X3AyHgd9IlHb6VANpQQqDr2o/qQp6McZ3y/IA2rVzKzSbw==}
@@ -2904,8 +2904,8 @@ packages:
     peerDependencies:
       '@langchain/core': ^1.2.17
 
-  langsmith@0.10.10:
-    resolution: {integrity: sha512-I83MmN/tqU662yHfv7DCMlJh8eFuRdY2Ri9rlvM61DGEsVdnVkOa0eyv9DpsstBM5dS877o5GDn+qHwZWfSgRg==}
+  langsmith@0.10.11:
+    resolution: {integrity: sha512-99ySd5piFC/y0kyKxlUODamdxYuHs0Sbnz47mop0SypvOaRT8REuB1vd8QpESBag8sHW0QPSXvUbhXpn2+v9yQ==}
     peerDependencies:
       '@opentelemetry/api': '*'
       '@opentelemetry/exporter-trace-otlp-proto': '*'
@@ -3415,8 +3415,8 @@ packages:
       zod:
         optional: true
 
-  openai@7.31.0:
-    resolution: {integrity: sha512-ZGAzauuYb0DdB53qVbIR+X8rdmNtWgiElrrMthbZCVreLcIsQJBwzAIWUbpB2FkQu2Cj6OJ9zJR1EKMUYn4/SQ==}
+  openai@7.32.0:
+    resolution: {integrity: sha512-avqxu/jl1gsVBCBgFNPr9sTh+wZppQphuhhFy1zEvAJxEaJ4t0ery6hZdOT9kws/EcNTARoQcZs2IT3bliE1SA==}
     engines: {node: '>=22.0.0'}
     peerDependencies:
       '@aws-sdk/credential-provider-node': '>=3.972.0 <4'
@@ -4076,8 +4076,8 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  uuid@14.0.2:
-    resolution: {integrity: sha512-xZe/16rV4aa+HGSOCiY2YeLT1OybRLrrkL/Rqaq7p7GMVXjFh+6wN4oMYgjFmnSnhY8t6Xpdl2l9qmnHYuMHwQ==}
+  uuid@14.0.3:
+    resolution: {integrity: sha512-Sc5u1VVln93y1Xnz4R+CunOZc7R9LUcTmhj7Rc7Eg3HVcf7rVn2FOoa812fe0W8p3jD7xeoGSYbfqCGGH2B6xw==}
     hasBin: true
 
   vary@1.1.2:
@@ -4668,7 +4668,7 @@ snapshots:
       yaml: 2.9.1
       zod: 4.6.5
     optionalDependencies:
-      langsmith: 0.10.10(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
+      langsmith: 0.10.11(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
       - '@opentelemetry/api'
@@ -4680,7 +4680,7 @@ snapshots:
       - undici
       - ws
 
-  '@langchain/community@1.1.29(@browserbasehq/sdk@2.21.0)(@browserbasehq/stagehand@1.14.0(@playwright/test@1.64.0)(deepmerge@4.3.1)(dotenv@17.4.2)(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(zod@4.6.5))(@ibm-cloud/watsonx-ai@1.7.16(supports-color@8.1.1))(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(ibm-cloud-sdk-core@5.9.0(supports-color@8.1.1))(ignore@7.0.12)(ioredis@5.11.1(supports-color@8.1.1))(jsonwebtoken@9.0.3)(lodash@4.18.1)(mysql2@3.24.5(@types/node@24.19.1))(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(playwright@1.64.0)(ws@8.22.0)':
+  '@langchain/community@1.1.29(@browserbasehq/sdk@2.21.0)(@browserbasehq/stagehand@1.14.0(@playwright/test@1.64.0)(deepmerge@4.3.1)(dotenv@17.4.2)(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(zod@4.6.5))(@ibm-cloud/watsonx-ai@1.7.16(supports-color@8.1.1))(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(ibm-cloud-sdk-core@5.9.0(supports-color@8.1.1))(ignore@7.0.12)(ioredis@5.11.1(supports-color@8.1.1))(jsonwebtoken@9.0.3)(lodash@4.18.1)(mysql2@3.24.5(@types/node@24.19.2))(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(playwright@1.64.0)(ws@8.22.0)':
     dependencies:
       '@browserbasehq/stagehand': 1.14.0(@playwright/test@1.64.0)(deepmerge@4.3.1)(dotenv@17.4.2)(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(zod@4.6.5)
       '@ibm-cloud/watsonx-ai': 1.7.16(supports-color@8.1.1)
@@ -4691,10 +4691,10 @@ snapshots:
       flat: 5.0.2
       ibm-cloud-sdk-core: 5.9.0(supports-color@8.1.1)
       js-yaml: 4.3.2
-      langsmith: 0.10.10(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
+      langsmith: 0.10.11(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       math-expression-evaluator: 2.0.7
       openai: 6.49.0(ws@8.22.0)(zod@4.6.5)
-      uuid: 14.0.2
+      uuid: 14.0.3
       zod: 4.6.5
     optionalDependencies:
       '@browserbasehq/sdk': 2.21.0
@@ -4702,7 +4702,7 @@ snapshots:
       ioredis: 5.11.1(supports-color@8.1.1)
       jsonwebtoken: 9.0.3
       lodash: 4.18.1
-      mysql2: 3.24.5(@types/node@24.19.1)
+      mysql2: 3.24.5(@types/node@24.19.2)
       playwright: 1.64.0
       ws: 8.22.0
     transitivePeerDependencies:
@@ -4718,7 +4718,7 @@ snapshots:
       '@cfworker/json-schema': 4.1.1
       '@standard-schema/spec': 1.1.0
       js-tiktoken: 1.0.21
-      langsmith: 0.10.10(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
+      langsmith: 0.10.11(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       mustache: 4.2.0
       p-queue: 6.6.2
       zod: 4.6.5
@@ -4760,7 +4760,7 @@ snapshots:
     dependencies:
       '@langchain/core': 1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       js-tiktoken: 1.0.21
-      openai: 7.31.0(ws@8.22.0)(zod@4.6.5)
+      openai: 7.32.0(ws@8.22.0)(zod@4.6.5)
       zod: 4.6.5
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
@@ -5057,12 +5057,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.3
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.3
 
-  '@tailwindcss/vite@4.3.3(vite@8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
+  '@tailwindcss/vite@4.3.3(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
       tailwindcss: 4.3.3
-      vite: 8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
 
   '@tanstack/devtools-event-client@0.4.4': {}
 
@@ -5096,15 +5096,15 @@ snapshots:
       react-dom: 19.3.0(react@19.3.0)
       use-sync-external-store: 1.7.0(react@19.3.0)
 
-  '@tanstack/react-virtual@3.14.13(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
+  '@tanstack/react-virtual@3.14.14(react-dom@19.3.0(react@19.3.0))(react@19.3.0)':
     dependencies:
-      '@tanstack/virtual-core': 3.17.11
+      '@tanstack/virtual-core': 3.18.0
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
 
   '@tanstack/store@0.11.2': {}
 
-  '@tanstack/virtual-core@3.17.11': {}
+  '@tanstack/virtual-core@3.18.0': {}
 
   '@tokenizer/inflate@0.4.1(supports-color@8.1.1)':
     dependencies:
@@ -5117,7 +5117,7 @@ snapshots:
 
   '@types/accepts@1.3.7':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/babel__core@7.20.5':
     dependencies:
@@ -5143,16 +5143,16 @@ snapshots:
   '@types/body-parser@1.19.6':
     dependencies:
       '@types/connect': 3.4.38
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/co-body@6.1.3':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
       '@types/qs': 6.15.1
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/content-disposition@0.5.9': {}
 
@@ -5161,7 +5161,7 @@ snapshots:
       '@types/connect': 3.4.38
       '@types/express': 5.0.6
       '@types/keygrip': 1.0.6
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/debug@4.1.13':
     dependencies:
@@ -5175,7 +5175,7 @@ snapshots:
 
   '@types/express-serve-static-core@5.1.3':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
       '@types/qs': 6.15.1
       '@types/range-parser': 1.2.7
       '@types/send': 1.2.1
@@ -5205,7 +5205,7 @@ snapshots:
   '@types/jsonwebtoken@9.0.10':
     dependencies:
       '@types/ms': 2.1.0
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/keygrip@1.0.6': {}
 
@@ -5231,7 +5231,7 @@ snapshots:
       '@types/http-errors': 2.0.5
       '@types/keygrip': 1.0.6
       '@types/koa-compose': 3.2.9
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/koa__cors@5.0.1':
     dependencies:
@@ -5247,9 +5247,9 @@ snapshots:
 
   '@types/lodash-es@4.17.12':
     dependencies:
-      '@types/lodash': 4.17.25
+      '@types/lodash': 4.17.26
 
-  '@types/lodash@4.17.25': {}
+  '@types/lodash@4.17.26': {}
 
   '@types/mdast@4.0.4':
     dependencies:
@@ -5259,14 +5259,14 @@ snapshots:
 
   '@types/node-fetch@2.6.13':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
       form-data: 4.0.6
 
   '@types/node@18.19.130':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@24.19.1':
+  '@types/node@24.19.2':
     dependencies:
       undici-types: 7.24.6
 
@@ -5286,12 +5286,12 @@ snapshots:
 
   '@types/send@1.2.1':
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/serve-static@2.2.0':
     dependencies:
       '@types/http-errors': 2.0.5
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
 
   '@types/unist@2.0.11': {}
 
@@ -5390,7 +5390,7 @@ snapshots:
 
   '@ungap/structured-clone@1.4.0': {}
 
-  '@vitejs/plugin-react@5.2.0(supports-color@8.1.1)(vite@8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
+  '@vitejs/plugin-react@5.2.0(supports-color@8.1.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1))':
     dependencies:
       '@babel/core': 7.29.7(supports-color@8.1.1)
       '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7(supports-color@8.1.1))
@@ -5398,7 +5398,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-rc.3
       '@types/babel__core': 7.20.5
       react-refresh: 0.18.0
-      vite: 8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
+      vite: 8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -6279,7 +6279,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knex@3.3.0(mysql2@3.24.5(@types/node@24.19.1))(supports-color@8.1.1):
+  knex@3.3.0(mysql2@3.24.5(@types/node@24.19.2))(supports-color@8.1.1):
     dependencies:
       colorette: 2.0.19
       commander: 10.0.1
@@ -6296,7 +6296,7 @@ snapshots:
       tarn: 3.1.2
       tildify: 2.0.0
     optionalDependencies:
-      mysql2: 3.24.5(@types/node@24.19.1)
+      mysql2: 3.24.5(@types/node@24.19.2)
     transitivePeerDependencies:
       - supports-color
 
@@ -6343,7 +6343,7 @@ snapshots:
       '@langchain/core': 1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       '@langchain/langgraph': 1.4.21(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))(react-dom@19.3.0(react@19.3.0))(react@19.3.0)(zod@4.6.5)
       '@langchain/langgraph-checkpoint': 1.1.6(@langchain/core@1.2.17(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0))
-      langsmith: 0.10.10(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
+      langsmith: 0.10.11(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0)
       zod: 4.6.5
     transitivePeerDependencies:
       - '@opentelemetry/api'
@@ -6354,7 +6354,7 @@ snapshots:
       - react-dom
       - ws
 
-  langsmith@0.10.10(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0):
+  langsmith@0.10.11(openai@6.49.0(ws@8.22.0)(zod@4.6.5))(ws@8.22.0):
     dependencies:
       p-queue: 6.6.2
     optionalDependencies:
@@ -6908,9 +6908,9 @@ snapshots:
 
   mustache@4.2.0: {}
 
-  mysql2@3.24.5(@types/node@24.19.1):
+  mysql2@3.24.5(@types/node@24.19.2):
     dependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
       aws-ssl-profiles: 1.1.2
       generate-function: 2.3.1
       iconv-lite: 0.7.3
@@ -6960,7 +6960,7 @@ snapshots:
       ws: 8.22.0
       zod: 4.6.5
 
-  openai@7.31.0(ws@8.22.0)(zod@4.6.5):
+  openai@7.32.0(ws@8.22.0)(zod@4.6.5):
     optionalDependencies:
       ws: 8.22.0
       zod: 4.6.5
@@ -7594,7 +7594,7 @@ snapshots:
     dependencies:
       react: 19.3.0
 
-  uuid@14.0.2: {}
+  uuid@14.0.3: {}
 
   vary@1.1.2: {}
 
@@ -7613,7 +7613,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@8.3.4(@types/node@24.19.1)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1):
+  vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(tsx@4.23.15)(yaml@2.9.1):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -7621,7 +7621,7 @@ snapshots:
       rolldown: 1.2.13
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 24.19.1
+      '@types/node': 24.19.2
       esbuild: 0.28.2
       fsevents: 2.3.3
       jiti: 2.7.0
